@@ -1,4 +1,4 @@
-const Idea = require('../models/idea');
+const Idea = require('../models/Idea');
 
 // Create a new idea (only by logged-in user)
 exports.createIdea = async (req, res) => {

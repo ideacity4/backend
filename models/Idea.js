@@ -31,6 +31,10 @@ const ideaSchema = new Schema({
     enum: ['available', 'sold'],
     default: 'available'
   },
+  verified:{
+    type: Boolean,
+    default: true
+  },
   created_at: {
     type: Date,
     default: Date.now

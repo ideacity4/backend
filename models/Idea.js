@@ -23,7 +23,7 @@ const ideaSchema = new Schema({
   },
   description: String,
   price: {
-    type: Number,
+    type: String,
     required: true
   },
   status: {

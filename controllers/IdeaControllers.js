@@ -7,6 +7,8 @@ exports.createIdea = async (req, res) => {
       ...req.body,
       seller_id: req.user._id
     });
+    const ideaPrice = idea.price;
+    idea.price = "$"+ ideaPrice;
     await idea.save();
     res.status(201).json({
       message: "Idea Created Successfully",

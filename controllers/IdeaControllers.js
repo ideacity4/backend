@@ -23,7 +23,7 @@ exports.createIdea = async (req, res) => {
 // Get all ideas (public)
 exports.getAllIdeas = async (req, res) => {
   try {
-    const ideas = await Idea.find().populate('seller_id', 'email', 'name', 'avatar'); // optional: populate seller info
+    const ideas = await Idea.find().populate('seller_id', 'email name avatar'); // optional: populate seller info
     res.status(200).json(ideas);
   } catch (err) {
     console.error(err);

@@ -12,6 +12,10 @@ const ideaSchema = new Schema({
     ref: "User",
     default: null,
   },
+  score:{
+    type: Number,
+    default: 50
+  },
   title: {
     type: String,
     required: true,

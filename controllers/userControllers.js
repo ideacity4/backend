@@ -7,6 +7,7 @@ exports.getUserByEmail = async (req, res) => {
     res.status(200).json({
       name: user.name,
       email: user.email,
+      avatar: user.avatar,
       role: user.role,
       created_at: user.created_at
     });
